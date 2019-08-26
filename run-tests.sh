@@ -12,7 +12,7 @@ usage: $0 [IMAGE...]
 
 examples:
        $0
-       $0 7.6-community
+       $0 7.6-enterprise
 EOF
 }
 
@@ -96,7 +96,7 @@ for arg; do
 done
 
 if [[ $# = 0 ]]; then
-    images=(*/community)
+    images=(*/enterprise)
 else
     images=("$@")
 fi
